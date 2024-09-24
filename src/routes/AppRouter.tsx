@@ -8,13 +8,7 @@ import {
 import Home from '../pages/home/Home';
 import Game from '../pages/game/Game';
 import Ranking from '../pages/ranking/Ranking';
-
-export const ROUTES = {
-  HOME: '/',
-  GAME: '/game',
-  RANKING: '/ranking',
-  NOT_FOUND: '*',
-};
+import { ROUTES } from './routes-constant';
 
 function AppRouter() {
   return (
