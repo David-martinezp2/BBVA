@@ -1,6 +1,6 @@
 # Juego BBVA Clicker
 
-¡Bienvenido al Juego BBVA Clicker! Esta es una aplicación web progresiva (PWA) inspirada en juegos de puntos incrementales como Cookie Clicker. En este juego, los jugadores ganan puntos haciendo clic en un botón, pueden comprar AutoClickers para generar puntos automáticamente, mejoras para aumentar la producción y MegaClickers para obtener aún más puntos.
+¡Bienvenido al Juego BBVA Clicker! Esta es una aplicación web progresiva (PWA) inspirada en juegos de puntos incrementales como Cookie Clicker ha sido creada por David Martinez. En este juego, los jugadores ganan puntos haciendo clic en un botón, pueden comprar AutoClickers para generar puntos automáticamente, mejoras para aumentar la producción y MegaClickers para obtener aún más puntos.
 
 ## Características
 
