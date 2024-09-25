@@ -1,46 +1,68 @@
-# Getting Started with Create React App
+# Juego BBVA Clicker
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+¡Bienvenido al Juego BBVA Clicker! Esta es una aplicación web progresiva (PWA) inspirada en juegos de puntos incrementales como Cookie Clicker. En este juego, los jugadores ganan puntos haciendo clic en un botón, pueden comprar AutoClickers para generar puntos automáticamente, mejoras para aumentar la producción y MegaClickers para obtener aún más puntos.
 
-## Available Scripts
+## Características
 
-In the project directory, you can run:
+- **Juego BBVA Clicker**: Cada clic genera un punto.
+- **AutoClickers**: Los jugadores pueden comprar AutoClickers para generar puntos automáticamente.
+- **Mejoras**: Incrementan la productividad de los AutoClickers.
+- **MegaClickers**: Generan más puntos que los AutoClickers normales.
+- **Ranking**: Muestra el ranking de los jugadores con mayor puntuación.
+- **Persistencia**: Los datos de los jugadores se guardan en el localStorage, por lo que pueden continuar su juego desde donde lo dejaron.
+- **PWA**: Funciona sin conexión después de haber sido visitada al menos una vez.
+- **Responsive**: Diseño optimizado para dispositivos móviles, tabletas y computadoras.
 
-### `npm start`
+## Tecnologías Utilizadas
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- **React** con **TypeScript**
+- **React Router** para la navegación
+- **CSS Modules** para el diseño
+- **Netlify** para el despliegue
+- **LocalStorage** para la persistencia de datos
+- **Jest** para pruebas unitarias
+- **Netlify** para el hosting de la PWA
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Instalación y Ejecución Local
 
-### `npm test`
+### Requisitos
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Node.js (versión 14 o superior)
+- npm o yarn
 
-### `npm run build`
+### Instrucciones
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Clona el repositorio:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+   git clone https://github.com/David-martinezp2/BBVA/tree/master
+   cd tu-repositorio
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2.Instala las dependencias:
 
-### `npm run eject`
+  npm install
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+3.Ejecuta la aplicación localmente:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+  npm start
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Scripts Disponibles
 
-## Learn More
+npm start: Inicia la aplicación en modo de desarrollo.
+npm run build: Construye la aplicación para producción en la carpeta build.
+npm test: Ejecuta las pruebas unitarias usando Jest.
+npm run lint: Corre ESLint para verificar problemas de estilo de código.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Herramientas de Análisis Estático y Formateo
+
+La aplicación utiliza ESLint y Prettier para garantizar que el código siga un estilo consistente.
+
+Para ejecutar ESLint:
+npm run lint
+
+Para ejecutar Prettier:
+npm run format
+
+
+
