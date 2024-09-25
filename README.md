@@ -70,4 +70,14 @@ Para ejecutar Prettier:
 npm run format
 
 
+## Pruebas
+
+Para ejecutar las pruebas unitarias, usa:
+
+npm test
+
+## Persistencia y modo Offline
+
+La aplicación utiliza localStorage para almacenar el progreso de cada jugador bajo la clave player_{nombre}, lo que permite continuar el juego donde lo dejaron. Además, es una PWA, lo que significa que puede funcionar en modo offline después de ser cargada una vez.
+
 
