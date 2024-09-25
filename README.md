@@ -35,13 +35,13 @@
 1. Clona el repositorio:
 
    git clone https://github.com/David-martinezp2/BBVA/tree/master
-   cd tu-repositorio
 
-2.Instala las dependencias:
+
+   2.Instala las dependencias:
 
   npm install
 
-3.Ejecuta la aplicación localmente:
+   3.Ejecuta la aplicación localmente:
 
   npm start
 
