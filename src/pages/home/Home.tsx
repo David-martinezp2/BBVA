@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
-import Button from '../../component/Button';
-import Input from '../../component/Input';
+import Button from '../../component/Button/Button';
+import Input from '../../component/Input/Input';
+import styles from './Home.module.css';
 
 const Home: React.FC = () => {
   const [playerName, setPlayerName] = useState('');
@@ -18,7 +19,7 @@ const Home: React.FC = () => {
   };
 
   return (
-    <div>
+    <div className={styles.container}>
       <h1>¡Bienvenido al Juego!</h1>
       <Input
         type='text'

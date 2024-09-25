@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import Button from '../../component/Button';
+import Button from '../../component/Button/Button';
+import styles from './Ranking.module.css';
+import { Box } from '@mui/material';
 
 interface Player {
   name: string;
@@ -26,7 +28,7 @@ const Ranking: React.FC = () => {
       }
     }
 
-    // Ordenar jugadores por puntaje más alto
+    // Ordenar jugadores con mayor puntuación primero
     playersList.sort((a, b) => b.points - a.points);
     setPlayers(playersList);
   }, []);
@@ -36,17 +38,19 @@ const Ranking: React.FC = () => {
   };
 
   return (
-    <div>
+    <Box className={styles.container}>
       <h1>Ranking de Jugadores</h1>
-      <ul>
+      <ul className={styles.playerList}>
         {players.map((player, index) => (
-          <li key={index}>
+          <li key={index} className={styles.playerItem}>
             {index + 1}. {player.name} - {player.points} puntos
           </li>
         ))}
       </ul>
-      <Button onClick={handleExitGame}>Volver a Home</Button>
-    </div>
+      <Box className={styles.buttonContainer}>
+        <Button onClick={handleExitGame}>Volver a Home</Button>
+      </Box>
+    </Box>
   );
 };
 

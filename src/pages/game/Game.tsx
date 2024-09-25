@@ -1,7 +1,8 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
-import Button from '../../component/Button';
-
+import Button from '../../component/Button/Button';
+import styles from './Game.module.css';
+import { Box } from '@mui/material';
 const Game: React.FC = () => {
   const [points, setPoints] = useState<number>(0);
   const [autoClickers, setAutoClickers] = useState<number>(0);
@@ -105,24 +106,26 @@ const Game: React.FC = () => {
   };
 
   return (
-    <div>
+    <Box className={styles.container}>
       <h1>¡Hola {playerName}!</h1>
       <p>Puntos: {formatNumber(points)}</p>
-      <Button onClick={handleAddPoint}>Ganar punto</Button>
-      <Button
-        onClick={handleBuyAutoClicker}
-        disabled={points < 10 + 10 * autoClickers}
-      >
-        Comprar AutoClicker ({formatNumber(autoClickers)})
-      </Button>
-      <Button onClick={handleBuyUpgrade} disabled={points < 100}>
-        Comprar Mejora (Multiplicador x{autoClickerMultiplier})
-      </Button>
-      <Button onClick={handleBuyMegaClicker} disabled={points < 500}>
-        Comprar MegaClicker ({megaClickers})
-      </Button>
-      <Button onClick={handleExitGame}>Salir</Button>
-    </div>
+      <Box className={styles.buttonContainer}>
+        <Button onClick={handleAddPoint}>Ganar punto</Button>
+        <Button
+          onClick={handleBuyAutoClicker}
+          disabled={points < 10 + 10 * autoClickers}
+        >
+          Comprar AutoClicker ({formatNumber(autoClickers)})
+        </Button>
+        <Button onClick={handleBuyUpgrade} disabled={points < 100}>
+          Comprar Mejora (Multiplicador x{autoClickerMultiplier})
+        </Button>
+        <Button onClick={handleBuyMegaClicker} disabled={points < 500}>
+          Comprar MegaClicker ({megaClickers})
+        </Button>
+        <Button onClick={handleExitGame}>Salir</Button>
+      </Box>
+    </Box>
   );
 };
 

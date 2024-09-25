@@ -1,5 +1,5 @@
 import React from 'react';
-
+import styles from './Input.module.css';
 interface InputProps {
   value: string; // El valor del input
   onChange: (e: React.ChangeEvent<HTMLInputElement>) => void; // Función que se ejecuta al cambiar el valor
@@ -17,6 +17,7 @@ const Input: React.FC<InputProps> = ({
 }) => {
   return (
     <input
+      className={styles.input}
       type={type}
       value={value}
       onChange={onChange}
