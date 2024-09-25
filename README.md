@@ -49,8 +49,11 @@
 ## Scripts Disponibles
 
 npm start: Inicia la aplicación en modo de desarrollo.
+
 npm run build: Construye la aplicación para producción en la carpeta build.
+
 npm test: Ejecuta las pruebas unitarias usando Jest.
+
 npm run lint: Corre ESLint para verificar problemas de estilo de código.
 
 
